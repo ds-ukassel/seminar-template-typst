@@ -1,4 +1,5 @@
-#import "@preview/clean-acmart:0.0.1": acmart, acmart-ccs, acmart-keywords, acmart-ref, to-string
+#import "@preview/clean-acmart:0.0.1": acmart-ccs, acmart-keywords, acmart-ref, to-string
+#import "template.typ": acmartVS
 
 #let cuhk = super(sym.suit.spade)
 
@@ -29,7 +30,7 @@
 #let doi = "https://doi.org/10.1145/0000000000"
 
 
-#show: acmart.with(
+#show: acmartVS.with(
   title: title,
   authors: authors,
   affiliations: affiliations,
